@@ -634,7 +634,7 @@ header {
 }
 
 .logo_area {
-    padding: 20px 0
+    padding: 10px 0
 }
 
 .hero_title {
@@ -651,7 +651,7 @@ header {
 }
 
 .main_header_area.sticky {
-    background-color: #fff;
+    background-color: #002540;
     box-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.2);
     position: fixed;
     top: 0;
@@ -698,13 +698,12 @@ header {
 }
 
 .main_header_area.sticky .mainmenu ul#nav li a {
-    color: #333
+    color: #fff;
 }
 
 .main_header_area.sticky .mainmenu ul#nav li.current_page_item a,
 .main_header_area.sticky .mainmenu ul#nav li.current_page_item a:focus {
-    color: #111;
-    background-color: #f6f6f6
+    color: #50e389;
 }
 
 .main_header_area .mainmenu ul#nav li.current_page_item a {
