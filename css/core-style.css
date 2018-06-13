@@ -214,6 +214,16 @@ img {
     margin-right: 70px !important;
 }
 
+.relative {
+  position: relative;
+}
+
+.absolute {
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+
 .table {
     display: table;
     z-index: 9;
@@ -1228,6 +1238,23 @@ h2.default-description {
 
 .resources-jumbo {
   margin-top: -1.5%;
+}
+
+.resources-thumb {
+  width: 150px;
+  height: 150px;
+}
+
+.resources-thumb img {
+  width: 150px;
+  height: 150px;
+  opacity: 0.2;
+}
+
+.resources-thumb h5 {
+  top: 65px;
+  font-weight: bold;
+  color: #50E389 !important;
 }
 
 .single_team {
