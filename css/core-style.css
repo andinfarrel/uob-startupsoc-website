@@ -1176,6 +1176,37 @@ h2.default-description {
     color: #50e389
 }
 
+.resources_area {
+  position: relative;
+  z-index: 1;
+}
+
+.resources_area:before {
+  background: inherit;
+  top: 0;
+  display: block;
+  height: 60%;
+  left: 0;
+  position: absolute;
+  right: 0;
+  transform: skewY(-3deg);
+  transform-origin: 0%;
+  z-index: -1;
+}
+
+.resources_area:after {
+  background: inherit;
+  bottom: 0;
+  display: block;
+  height: 60%;
+  left: 0;
+  position: absolute;
+  right: 0;
+  transform: skewY(3deg);
+  transform-origin: 0 100%;
+  z-index: -1;
+}
+
 .single_team {
     margin-bottom: 30px;
     position: relative;
