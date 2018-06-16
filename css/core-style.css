@@ -79,6 +79,11 @@ body {
     transition-duration: 500ms
 }
 
+p {
+  color: #002540 !important;
+  font-weight: normal !important;
+}
+
 h1,
 h2,
 h3,
@@ -338,7 +343,7 @@ img {
 }
 
 .bg-white {
-    background-color: #fff!important
+    background-color: #002540!important
 }
 
 .bg-dark {
@@ -797,7 +802,7 @@ header {
 
 .default-description>p,
 h2.default-description {
-    color: #fff;
+    color: #002540;
     font-size: 18px
 }
 
@@ -875,7 +880,7 @@ h2.default-description {
 
 .cta_area h2,
 .cta_area p {
-    color: #fff
+    color: #002540
 }
 
 .cta_content>h2 {
@@ -1268,6 +1273,13 @@ h2.default-description {
   text-decoration: underline;
 }
 
+.about_area {
+  background-image: url("../img/stars.png");
+  background-repeat: no-repeat;
+  background-size: 90% auto;
+  background-position: center;
+}
+
 .single_team {
     margin-bottom: 30px;
     position: relative;
@@ -1350,7 +1362,7 @@ h2.default-description {
 .raindrops .section_heading>h2,
 .raindrops .section_heading>p,
 .raindrops .social_icon>a {
-    color: #fff
+    color: #002540
 }
 
 .testimonial_area {
@@ -1373,12 +1385,12 @@ h2.default-description {
 
 .testimonial_author_name>h4 {
     margin-bottom: 5px;
-    color: #fff
+    color: #002540
 }
 
 .testimonial_author_name>h5 {
     margin: 0;
-    color: #fff
+    color: #002540
 }
 
 .testimonials {
@@ -1418,7 +1430,7 @@ h2.default-description {
 .testimonial_text h2,
 .testimonial_area .section_heading>p,
 .testimonial_area .section_heading>h2 {
-    color: #fff
+    color: #002540
 }
 
 .testimonial_text>h2 {
@@ -1454,19 +1466,19 @@ h2.default-description {
 }
 
 .cool_fact_text>p {
-    color: #fff;
+    color: #002540;
     margin: 0
 }
 
 .cool_fact_text>h2 {
-    color: #fff;
+    color: #002540;
     font-size: 36px;
     font-weight: 400;
     font-family: "Roboto", sans-serif
 }
 
 .cool_fact_text>i {
-    color: #fff;
+    color: #002540;
     font-size: 70px;
     line-height: 1;
     margin-bottom: 15px
@@ -2681,7 +2693,7 @@ ul.children .comment-content {
 }
 
 .text-typed .welcome_text>p {
-    color: #fff
+    color: #002540
 }
 
 .full_screen_menu .navbar-toggle>i {
