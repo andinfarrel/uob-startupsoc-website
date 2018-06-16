@@ -1238,6 +1238,7 @@ h2.default-description {
 
 .resources-jumbo {
   margin-top: -1.5%;
+  border-radius: 25px !important;
 }
 
 .resources-thumb {
@@ -1251,10 +1252,20 @@ h2.default-description {
   opacity: 0.2;
 }
 
+.active .resources-thumb img,
+.resources-thumb:hover img {
+  opacity: 0.1;
+}
+
 .resources-thumb h5 {
   top: 65px;
   font-weight: bold;
   color: #50E389 !important;
+}
+
+.active .resources-thumb h5,
+.resources-thumb:hover h5 {
+  text-decoration: underline;
 }
 
 .single_team {
