@@ -94,7 +94,7 @@ h6 {
     font-weight: 300;
     line-height: 1.2;
     font-family: 'Circular Book', sans-serif;
-    color: #002540
+    color: #002540;
 }
 
 h1,
@@ -227,6 +227,10 @@ img {
   position: absolute;
   left: 0;
   top: 0;
+}
+
+.center-vertically {
+  padding: 70px 0;
 }
 
 .table {
@@ -434,6 +438,10 @@ img {
 .bg-brand-green h6,
 .bg-brand-green p {
   color: #002540 !important;
+}
+
+.brand-green {
+  color: #50E389 !important;
 }
 
 .contact-btn {
@@ -879,6 +887,7 @@ h2.default-description {
 }
 
 .cta_area h2,
+.cta_area h3,
 .cta_area p {
     color: #002540
 }
@@ -1278,6 +1287,28 @@ h2.default-description {
   background-repeat: no-repeat;
   background-size: 90% auto;
   background-position: center;
+}
+
+.vision_area {
+  height: 400px;
+}
+
+.vision_area::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: .3;
+  z-index: -1;
+  background-image: url("../img/social.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.vision_area h3 {
+  line-height: 150%;
 }
 
 .single_team {
