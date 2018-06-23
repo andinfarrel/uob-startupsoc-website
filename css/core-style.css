@@ -317,6 +317,11 @@ img {
     padding-bottom: 70px
 }
 
+.section_padding_100_150 {
+    padding-top: 100px;
+    padding-bottom: 150px
+}
+
 .section_padding_200 {
     padding-top: 200px;
     padding-bottom: 200px
@@ -1242,7 +1247,7 @@ h2.default-description {
   left: 0;
   position: absolute;
   right: 0;
-  transform: skewY(-3deg);
+  transform: skewY(-5deg);
   transform-origin: 0%;
   z-index: -1;
 }
@@ -1255,7 +1260,7 @@ h2.default-description {
   left: 0;
   position: absolute;
   right: 0;
-  transform: skewY(3deg);
+  transform: skewY(7deg);
   transform-origin: 0 100%;
   z-index: -1;
 }
@@ -1263,6 +1268,7 @@ h2.default-description {
 .resources-jumbo {
   margin-top: -1.5%;
   border-radius: 25px !important;
+  box-shadow: -0.5px 1px 5px #333;
 }
 
 .resources-thumb {
