@@ -1224,7 +1224,7 @@ h2.default-description {
   z-index: 1;
 }
 
-.resources-area:before {
+.resources-area::before {
   background: inherit;
   top: 0;
   display: block;
@@ -1237,7 +1237,7 @@ h2.default-description {
   z-index: -1;
 }
 
-.resources-area:after {
+.resources-area::after {
   background: inherit;
   bottom: 0;
   display: block;
@@ -1309,6 +1309,25 @@ h2.default-description {
 
 .vision_area h3 {
   line-height: 150%
+}
+
+.our_team_area {
+  background-color: #fff;
+  position: relative;
+  z-index: 1;
+}
+
+.our_team_area::after {
+  background: inherit;
+  bottom: 0;
+  display: block;
+  height: 60%;
+  left: 0;
+  position: absolute;
+  right: 0;
+  transform: skewY(5deg);
+  transform-origin: 0 100%;
+  z-index: -1;
 }
 
 .single_team {
@@ -1396,17 +1415,13 @@ h2.default-description {
     color: #002540
 }
 
-.message_now_area {
-    position: relative;
-    z-index: 1
-}
-
-.message_now_area .section_heading>p {
-    max-width: 100%
-}
-
-.message_now_area .section_heading {
-    margin-bottom: 0
+.contact_area {
+  position: relative;
+  z-index: -2;
+  background-image: url("../img/social2.png");
+  background-size: 100vw auto;
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
 .single_contact_area>p>i {
@@ -1444,12 +1459,24 @@ h2.default-description {
 }
 
 .footer_area {
+    height: 300px;
     position: relative;
-    z-index: 1
+    z-index: 1;
+    background-color: #002540;
 }
 
-.footer_bottom_area {
-    background-color: #002540
+.footer_area::before {
+  content: "";
+  background: inherit;
+  top: 0;
+  display: block;
+  height: 60%;
+  left: 0;
+  position: absolute;
+  right: 0;
+  transform: skewY(3deg);
+  transform-origin: 100%;
+  z-index: -1;
 }
 
 .footer_bottom {
