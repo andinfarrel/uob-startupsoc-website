@@ -1415,20 +1415,6 @@ h2.default-description {
     color: #002540
 }
 
-.contact_area {
-  position: relative;
-  z-index: -2;
-  background-image: url("../img/social2.png");
-  background-size: 100vw auto;
-  background-repeat: no-repeat;
-  background-position: center;
-}
-
-.single_contact_area>p>i {
-    color: #50e389;
-    margin-right: 10px
-}
-
 .social_links_area {
     padding: 15px 0;
     position: relative;
