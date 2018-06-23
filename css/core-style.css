@@ -416,32 +416,42 @@ img {
   background-color: #002540 !important;
 }
 
-.bg-brand-navy h1,
-.bg-brand-navy h2,
-.bg-brand-navy h3,
-.bg-brand-navy h4,
-.bg-brand-navy h5,
-.bg-brand-navy h6,
-.bg-brand-navy p {
-  color: #50E389 !important;
-}
-
-.bg-brand-green {
-  background-color: #50E389 !important;
-}
-
-.bg-brand-green h1,
-.bg-brand-green h2,
-.bg-brand-green h3,
-.bg-brand-green h4,
-.bg-brand-green h5,
-.bg-brand-green h6,
-.bg-brand-green p {
+.brand-navy,
+.brand-navy h1,
+.brand-navy h2,
+.brand-navy h3,
+.brand-navy h4,
+.brand-navy h5,
+.brand-navy h6,
+.brand-navy p {
   color: #002540 !important;
 }
 
-.brand-green {
+.bg-brand-green {
+  color: #002540 !important;
+  background-color: #50E389 !important;
+}
+
+.brand-green,
+.brand-green h1,
+.brand-green h2,
+.brand-green h3,
+.brand-green h4,
+.brand-green h5,
+.brand-green h6,
+.brand-green p {
   color: #50E389 !important;
+}
+
+.white,
+.white h1,
+.white h2,
+.white h3,
+.white h4,
+.white h5,
+.white h6,
+.white p {
+  color: #fff !important;
 }
 
 .contact-btn {
@@ -1445,10 +1455,10 @@ h2.default-description {
 }
 
 .footer_area {
-    height: 300px;
+    text-align: center;
     position: relative;
+    top: 100px;
     z-index: 1;
-    background-color: #002540;
 }
 
 .footer_area::before {
@@ -1460,28 +1470,18 @@ h2.default-description {
   left: 0;
   position: absolute;
   right: 0;
-  transform: skewY(3deg);
+  transform: skewY(4deg);
   transform-origin: 100%;
   z-index: -1;
 }
 
-.footer_bottom {
-    padding: 50px 0;
-    text-align: center
+.copyright {
+  padding: 0;
 }
 
-.footer_bottom p {
-    margin: 0;
-    color: #fff
-}
-
-.footer_bottom p>a {
-    color: #fff
-}
-
-.footer_bottom p>i,
-.footer_bottom p>a:hover {
-    color: #50e389
+.copyright p {
+  font-size: 95%;
+  color: #b7b7cc !important;
 }
 
 .welcome_area {
