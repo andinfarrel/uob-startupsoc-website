@@ -915,6 +915,10 @@ h2.default-description {
     background-color: #50e389
 }
 
+#events-container {
+  min-height: 300px;
+}
+
 .single_event {
     margin-bottom: 30px;
     position: relative;

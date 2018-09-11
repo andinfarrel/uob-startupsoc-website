@@ -16,8 +16,9 @@
 
     <!-- ManyChat -->
     <script src="//widget.manychat.com/587810254951322.js" async="async"></script>
+    <script src="js/events.js"></script>
 </head>
-<body>
+<body onload="fetchEvents();">
     <!---->
     <header class="header_area" id="home">
         <div class="main_header_area animated">
@@ -54,7 +55,7 @@
         </div>
     </header>
     <!---->
-    <section class="welcome_area full_height clearfix background-overlay parallax" id="particle" style="background-image: url(img/backdrop.png);">
+    <section class="welcome_area clearfix background-overlay parallax" id="particle" style="background-image: url(img/backdrop.png);">
         <div class="table hero_title">
             <div class="table_cell">
                 <div class="welcome_text text-center welcome_fade_text">
@@ -81,65 +82,9 @@
                     </div>
                 </div>
             </div>
-            <div class="row">
-                <div class="col-xs-12 col-sm-4">
-                    <div class="single_event item wow">
-                        <div class="single_event_img">
-                            <img src="img/bg-img/service-1.jpg" alt="">
-                            <div class="single_event_title">
-                                <h4>Networking</h4>
-                            </div>
-                        </div>
-                        <div class="single_event_content">
-                            <h5>Startup Society Launch: Meet &amp; Greet Drinks</h5>
-                            <ul class="fa-ul">
-                                <li><i class="fa-li fa fa-clock-o" aria-hidden="true"></i> Tue, 24 Oct 20:00</li>
-                                <li><i class="fa-li fa fa-map-marker" aria-hidden="true"></i> Beorma Bar, University of Birmingham</li>
-                                <li><i class="fa-li fa fa-info-circle" aria-hidden="true"></i> <a href="#">Facebook</a>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-xs-12 col-sm-4">
-                    <div class="single_event item wow">
-                        <div class="single_event_img">
-                            <img src="img/bg-img/service-2.jpg" alt="">
-                            <div class="single_event_title">
-                                <h4>Finance</h4>
-                            </div>
-                        </div>
-                        <div class="single_event_content">
-                            <h5>The Tecchy Series: Bitcoin, Ethereum and how to buy them</h5>
-                            <ul class="fa-ul">
-                                <li><i class="fa-li fa fa-clock-o" aria-hidden="true"></i> Thu, 16 Nov 18:00</li>
-                                <li><i class="fa-li fa fa-map-marker" aria-hidden="true"></i> Avon Room, University of Birmingham</li>
-                                <li><i class="fa-li fa fa-info-circle" aria-hidden="true"></i> <a href="#">Facebook</a>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-xs-12 col-sm-4">
-                    <div class="single_event item wow">
-                        <div class="single_event_img">
-                            <img src="img/bg-img/service-3.jpg" alt="">
-                            <div class="single_event_title">
-                                <h4>Networking</h4>
-                            </div>
-                        </div>
-                        <div class="single_event_content">
-                            <h5>Startup Society Launch: Meet &amp; Greet Drinks</h5>
-                            <ul class="fa-ul">
-                                <li><i class="fa-li fa fa-clock-o" aria-hidden="true"></i> Tue, 24 Oct 20:00</li>
-                                <li><i class="fa-li fa fa-map-marker" aria-hidden="true"></i> Beorma Bar, University of Birmingham</li>
-                                <li><i class="fa-li fa fa-info-circle" aria-hidden="true"></i> <a href="#">Facebook</a>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-
+            <div id="events-container" class="row">
+              <p id="no-events-info" class="text-center center-vertically ">There are no events planned out at the moment, like our <a href=https://www.facebook.com/uobstartupsoc/>facebook page</a> to get updated on events we will announce shortly!</p>
+              <!-- Generated events -->
             </div>
         </div>
     </section>
