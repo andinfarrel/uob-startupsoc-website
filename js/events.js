@@ -11,7 +11,7 @@ function fetchEvents() {
       events.sort(function(e1, e2) {
         return e1.start_time.getTime() - e2.start_time.getTime();
       });
-      
+
       renderEvents(events);
     },
     error: function(data) {
@@ -22,15 +22,19 @@ function fetchEvents() {
 
 
 function renderEvents(events) {
+  loader = document.getElementById("events-loader");
+  if (events.length == 0) {
+    document.getElementById("no-events-info").style.display = "block";
+    loader.style.display = "none";
+    return;
+  }
+
   eventsContainer = document.getElementById("events-container");
-  noEventsText = document.getElementById("no-events-info");
-  if (events.length > 0) {
-    noEventsText.style.display = "none";
-    eventBoxes = $.map(events, createEventBox);
-    eventRows = createEventRows(eventBoxes);
-    for (i in eventRows) {
-      eventsContainer.appendChild(eventRows[i]);
-    }
+  eventBoxes = $.map(events, createEventBox);
+  eventRows = createEventRows(eventBoxes);
+  loader.style.display = "none";
+  for (i in eventRows) {
+    eventsContainer.appendChild(eventRows[i]);
   }
 }
 
