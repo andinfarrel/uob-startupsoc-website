@@ -733,10 +733,6 @@ header {
     width: calc(100% - 280px)
 }
 
-.headerfull.sticky {
-    background-color: #111
-}
-
 .main_menu_area {
     float: right;
     position: relative;
@@ -800,7 +796,7 @@ header {
 }
 
 .blog_page .main_header_area {
-    background-color: #fff
+    background-color: #002540
 }
 
 .default-title h2 {
