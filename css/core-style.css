@@ -878,35 +878,6 @@ h2.default-description {
     margin: 0
 }
 
-.about_us_text>h2 {
-    font-size: 42px;
-    text-transform: capitalize
-}
-
-.about_image {
-    box-shadow: 3px 2px 3px rgba(0, 0, 0, 0.15);
-    height: 100%;
-    position: relative;
-    text-align: center;
-    z-index: 2
-}
-
-.video_btn {
-    border: 2px solid #fff;
-    border-radius: 50%;
-    display: block;
-    height: 60px;
-    margin: 0 auto;
-    width: 60px
-}
-
-.video_play_area a.video_btn>i {
-    color: #fff;
-    font-size: 30px;
-    line-height: 56px;
-    text-align: center
-}
-
 .cta_area {
     position: relative;
     z-index: 1
@@ -927,7 +898,13 @@ h2.default-description {
 }
 
 #events-container {
-  min-height: 300px;
+  min-height: 200px;
+}
+
+@media screen and (max-width: 600px) {
+  #events-container {
+    min-height: 100px;
+  }
 }
 
 .single_event {
@@ -1318,6 +1295,12 @@ h2.default-description {
   background-repeat: no-repeat;
   background-size: 90% auto;
   background-position: center;
+}
+
+@media screen and (max-width: 1000px) {
+  .about_area {
+    background-image: none;
+  }
 }
 
 .vision_area {
