@@ -1307,6 +1307,34 @@ h2.default-description {
   height: 400px;
 }
 
+.vision_area h3 {
+  padding: 40px 0;
+}
+
+@media screen and (max-width: 1000px) {
+  .vision_area h3 {
+    padding: 20px 0;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .vision_area h3 {
+    padding: 1px 0;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .vision_area {
+    height: 500px;
+  }
+}
+
+@media screen and (max-width: 350px) {
+  .vision_area {
+    height: 620px;
+  }
+}
+
 .vision_area::before {
   content: "";
   position: absolute;
