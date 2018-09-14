@@ -1267,6 +1267,10 @@ h2.default-description {
   box-shadow: -0.5px 1px 5px #333;
 }
 
+#resources-tab {
+  margin: 0 100px;
+}
+
 .resources-thumb {
   width: 150px;
   height: 150px;
