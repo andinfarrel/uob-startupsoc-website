@@ -142,14 +142,17 @@ p {
     font-family: 'Open Sans', sans-serif
 }
 
-a,
-a:hover,
-a:focus {
+a {
     -webkit-transition-duration: 500ms;
     transition-duration: 500ms;
     text-decoration: none;
     outline: 0;
-    color: #111
+    color: #016cba
+}
+
+a:hover,
+a:focus {
+  text-decoration: underline;
 }
 
 .btn {
