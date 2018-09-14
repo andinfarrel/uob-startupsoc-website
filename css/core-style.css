@@ -1271,7 +1271,7 @@ h2.default-description {
 }
 
 #resources-tab {
-  margin: 0 100px;
+  margin: 0 150px;
 }
 
 .resources-thumb {
@@ -1308,6 +1308,54 @@ h2.default-description {
 
 .resource-details ul {
   list-style-type: none;
+}
+
+@media screen and (max-width: 1200px) {
+  #resources-tab {
+    margin: 0 50px;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  #resources-tab {
+    margin: 0 10px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  #resources-tab {
+    position: relative;
+    margin: 0 100px;
+  }
+
+  #uni-res-tab-content {
+    margin: 0 30px;
+  }
+
+  .resources-thumb {
+    margin: 5px auto;
+  }
+}
+
+@media screen and (max-width: 650px) {
+  #resources-tab {
+    position: relative;
+    margin: 0 70px;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  #resources-tab {
+    position: relative;
+    margin: 0 50px;
+  }
+}
+
+@media screen and (max-width: 425px) {
+  #resources-tab {
+    position: relative;
+    margin: 0;
+  }
 }
 
 .about_area {
