@@ -1,7 +1,7 @@
 
 function fetchEvents() {
   $.ajax({
-    url: "https://api.startupsoc.kacperkielak.com/fb-events?fields=name,start_time,place,cover",
+    url: "https://api.startupsoc.kacperkielak.com/fb-events?fields=id,name,start_time,place,cover",
     type: "GET",
     success: function(data) {
       events = data.data;
@@ -30,37 +30,94 @@ function renderEvents(events) {
   }
 
   eventsContainer = document.getElementById("events-container");
-  eventBoxes = $.map(events, createEventBox);
-  eventRows = createEventRows(eventBoxes);
+  eventDivs = $.map(events, createEventDiv);
+  eventRows = createEventRows(eventDivs);
   loader.style.display = "none";
   for (i in eventRows) {
     eventsContainer.appendChild(eventRows[i]);
   }
 }
 
-function createEventRows(eventBoxes) {
-  eventRows = [];
-  row = document.createElement("row");
-  row.className = "row";
-  for (i in eventBoxes) {
-    row.appendChild(eventBoxes[i]);
-    if (i % 3 == 2) {
-      eventRows.push(row);
-      row = document.createElement("row");
-      row.className = "row";
+function createEventRows(eventDivs) {
+  eventGroups = []
+  group = []
+  for (i in eventDivs) {
+    if (group.length == 3) {
+      eventGroups.push(group);
+      group = [];
     }
-  }
 
-  return eventRows;
+    group.push(eventDivs[i]);
+  }
+  eventGroups.push(group);
+
+  return $.map(eventGroups, createEventRow);
 }
 
-function createEventBox(event) {
-  var div1 = document.createElement("div");
-  div1.className = "col-xs-12 col-sm-4";
+function createEventRow(eventGroup) {
+  row = document.createElement("row");
+  row.className = "row";
+  if (eventGroup.length == 3) {
+    for (i in eventGroup) {
+      column = document.createElement("div");
+      column.className = "col-xs-12 col-sm-4";
+      column.appendChild(eventGroup[i]);
+      row.appendChild(column)
+    }
+
+    return row
+  }
+
+  if (eventGroup.length == 2) {
+    edgeColumn = document.createElement("div");
+    edgeColumn.className = "col-xs-12 col-sm-1";
+    row.appendChild(edgeColumn);
+
+    column = document.createElement("div");
+    column.className = "col-xs-12 col-sm-4";
+    column.appendChild(eventGroup[0]);
+    row.appendChild(column);
+
+    breakColumn = document.createElement("div");
+    breakColumn.className = "col-xs-12 col-sm-2";
+    row.appendChild(breakColumn);
+
+    column = document.createElement("div");
+    column.className = "col-xs-12 col-sm-4";
+    column.appendChild(eventGroup[1]);
+    row.appendChild(column);
+
+    edgeColumn = document.createElement("div");
+    edgeColumn.className = "col-xs-12 col-sm-1";
+    row.appendChild(edgeColumn);
+
+    return row
+  }
+
+  edgeColumn = document.createElement("div");
+  edgeColumn.className = "col-xs-12 col-sm-4";
+  row.appendChild(edgeColumn);
+
+  column = document.createElement("div");
+  column.className = "col-xs-12 col-sm-4";
+  column.appendChild(eventGroup[0]);
+  row.appendChild(column);
+
+  edgeColumn = document.createElement("div");
+  edgeColumn.className = "col-xs-12 col-sm-4";
+  row.appendChild(edgeColumn);
+
+  return row;
+}
+
+function createEventDiv(event) {
+  var eventDiv = document.createElement("div");
+  eventDiv.className = "single_event item wow";
 
   // Create image
-  var div2 = document.createElement("div");
-  div2.className = "single_event item wow";
+  var imgAnchor = document.createElement("a");
+  imgAnchor.href = "https://www.facebook.com/events/" + event.id;
+  imgAnchor.target = "_blank";
 
   var imgDiv = document.createElement("div");
   imgDiv.className = "single_event_img";
@@ -69,7 +126,8 @@ function createEventBox(event) {
   img.src = event.cover.source;
 
   imgDiv.appendChild(img);
-  div2.appendChild(imgDiv);
+  imgAnchor.appendChild(imgDiv);
+  eventDiv.appendChild(imgAnchor);
 
   // Create details
   detailsDiv = document.createElement("div");
@@ -93,10 +151,9 @@ function createEventBox(event) {
   detailsList.appendChild(placeElement);
   detailsDiv.appendChild(nameHeader);
   detailsDiv.appendChild(detailsList);
-  div2.appendChild(detailsDiv);
+  eventDiv.appendChild(detailsDiv);
 
-  div1.appendChild(div2);
-  return div1;
+  return eventDiv;
 } /*
 <div class="col-xs-12 col-sm-4">
     <div class="single_event item wow">
