@@ -176,7 +176,7 @@ function createEventDiv(event) {
 
 var dayNames = ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"];
 var monthNames = ["Jan", "Feb", "Mar", "Apr", "May",
-                  "Jun", "Jul", "Aug", "Sep", "Nov", "Dec"];
+                  "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"];
 function formatDatetime(datetime) {
   var day = datetime.getDay();
   var date = datetime.getDate();
