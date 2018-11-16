@@ -1584,6 +1584,23 @@ h2.default-description {
   color: #b7b7cc !important;
 }
 
+@media screen and (min-width: 780px) {
+  #startupgames {
+    position: relative;
+    top: 15px;
+    height: 40px;
+    border-radius: 50px;
+    background-color: #fff;
+  }
+
+  #startupgames a {
+    position: relative;
+    top: -15px;
+    color: #002540 !important;
+  }
+}
+
+
 .welcome_area {
     width: 100%;
     height: 100vh;
