@@ -2,7 +2,6 @@
 @import '../css/bootstrap.min.css';
 @import '../css/animate.css';
 @import '../css/meanmenu.css';
-@import '../css/font-awesome.min.css';
 
 @font-face {
 font-family: 'Circular Book';
@@ -490,6 +489,10 @@ img {
     padding: 10px 30px;
     -webkit-transition-duration: 500ms;
     transition-duration: 500ms
+}
+
+.uobss-btn.large {
+    font-size: 20px;
 }
 
 .uobss-btn:hover,
