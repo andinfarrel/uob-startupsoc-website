@@ -1,0 +1,29 @@
+{
+  "name": "uob-startupsoc-website",
+  "version": "1.0.0",
+  "description": "Website of the UoB Startup Society",
+  "main": "server/app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/K-Kielak/uob-startupsoc-website.git"
+  },
+  "author": "Vilmos Czeroczky",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/K-Kielak/uob-startupsoc-website/issues"
+  },
+  "homepage": "https://github.com/K-Kielak/uob-startupsoc-website#readme",
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "ejs": "^2.7.1",
+    "express": "^4.17.1",
+    "https": "^1.0.0",
+    "path": "^0.12.7"
+  },
+  "devDependencies": {
+    "dotenv": "^8.1.0"
+  }
+}

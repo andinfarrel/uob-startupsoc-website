@@ -1,0 +1,7 @@
+/**
+ * This is the file that needs to be started when running the app in development.
+ * Allows environmental variables to be set for the development instance in .env.
+ * Runs server/app.
+ */
+require('dotenv/config');
+require('./../server/app');
