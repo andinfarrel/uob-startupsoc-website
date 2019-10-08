@@ -16,7 +16,7 @@ app.use(bodyParser.urlencoded({extended: true}));
 app.set('views', path.join(__dirname, '/views'));
 
 app.get("/", (req, res) => {
-    res.send('This is my website!');
+    res.render('index');
 });
 
 server.listen(port, serverAddress, () => {
