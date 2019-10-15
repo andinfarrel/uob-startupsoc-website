@@ -1,7 +1,7 @@
 
 function fetchEvents() {
   $.ajax({
-    url: "https://api.startupsoc.kacperkielak.com/fb-events?fields=id,name,start_time,place,cover",
+    url: "/api/fb-events?fields=id,name,start_time,place,cover",
     type: "GET",
     success: function(data) {
       events = data.data;
@@ -123,7 +123,7 @@ function createEventDiv(event) {
   imgDiv.className = "single_event_img";
 
   var img = document.createElement("img");
-  img.src = event.cover.source;
+  img.src = event.cover ? event.cover.source : '';
 
   imgDiv.appendChild(img);
   imgAnchor.appendChild(imgDiv);
