@@ -7,6 +7,9 @@ const EVENTS_ENDPOINT = `https://graph.facebook.com/v3.1/${process.env.FB_PAGE_I
     'event_state_filter[0]=published&' +
     'time_filter=upcoming&include_canceled=false';
 
+// const EVENTS_ENDPOINT = `https://graph.facebook.com/v3.1/${process.env.FB_PAGE_ID}` +
+//     `/events?access_token=${process.env.FB_ACCESS_TOKEN}`;
+
 router.get('/', (req, res) => {
     res.send('Hello! This is UoB Startup Society API. To learn more visit ' +
         'our <a href=https://www.startupsoc.com/>website</a>.');
